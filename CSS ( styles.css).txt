@@ -1,0 +1,114 @@
+:root {
+    --bg-color-light: #f5f5f5;
+    --text-color-light: #333;
+    --container-bg-color-light: #fff;
+    --button-bg-color-light: #007bff;
+    --button-bg-color-hover-light: #0056b3;
+
+    --bg-color-dark: #333;
+    --text-color-dark: #f5f5f5;
+    --container-bg-color-dark: #444;
+    --button-bg-color-dark: #0056b3;
+    --button-bg-color-hover-dark: #007bff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--container-bg-color-light);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+body.dark-theme .container {
+    background-color: var(--container-bg-color-dark);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme input,
+body.dark-theme textarea {
+    background-color: #666;
+    color: #fff;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--button-bg-color-light);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-bg-color-hover-light);
+}
+
+body.dark-theme button {
+    background-color: var(--button-bg-color-dark);
+}
+
+body.dark-theme button:hover {
+    background-color: var(--button-bg-color-hover-dark);
+}
+
+#projects {
+    margin-top: 20px;
+}
+
+#projects-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#projects-list li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+body.dark-theme #projects-list li {
+    background-color: #555;
+}

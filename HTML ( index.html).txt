@@ -1,0 +1,35 @@
+‪<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Портфолио</h1>
+        <button id="theme-toggle">Сменить тему</button>
+        <form id="portfolio-form">
+            <label for="first-name">Имя:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Фамилия:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="project">Описание проекта:</label>
+            <textarea id="project" name="project" required></textarea>
+
+            <button type="submit">Добавить проект</button>
+        </form>
+        <div id="projects">
+            <h2>Проекты</h2>
+            <ul id="projects-list"></ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
